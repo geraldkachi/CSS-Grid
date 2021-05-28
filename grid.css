@@ -44,8 +44,9 @@ footer {
     grid-area: footer;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
  .container {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:  0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
     grid-template-areas:
@@ -64,8 +65,8 @@ footer {
 .container2 {
     display: grid;
     height: 100vh;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 0.4fr 1.5fr 1.2fr .8fr; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.4fr 1.5fr 1.2fr .8fr;
     grid-gap: 10px;
     grid-template-areas:    
     "content1-2 content1-3" 
@@ -73,9 +74,9 @@ footer {
 }
 .content1-2 {
     background-color: darkblue;
-    /* grid-area: content1-2; */
+    grid-area: content1-2;
 }
 .content1-3 {
     background-color: darkred;
-    /* grid-area: ; */
+    grid-area: content1-3;
 }
