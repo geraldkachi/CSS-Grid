@@ -6,9 +6,9 @@
 }
 .header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    /* justify-content: flex-end; */
     align-items: center;
-    /* background-color: #24252A; */
 }
 li, a, button {
     font-family: "Montserrat", sans-serif;
@@ -18,8 +18,10 @@ li, a, button {
     text-decoration: none;
 }
 .logo{
-    margin-right: auto;
+    /* margin-right: auto; */
+    margin-left: auto;
     cursor: pointer;
+    order: 3;
 }
 
 .nav_link { /* ul */
@@ -28,6 +30,7 @@ li, a, button {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    order: 1;
 }
 .nav_link li {
     padding: 0px 10px;

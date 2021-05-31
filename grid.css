@@ -1,6 +1,11 @@
 * {
     margin: 0;
 }
+
+:root {
+    --main-border-radius: 5px;
+    --main-padding: 5px;
+}
 .container {
     display: grid;
     height: 100vh;
@@ -18,37 +23,50 @@
 nav{
     background-color: blueviolet;
     grid-area: nav;
+    border-radius: var(--main-border-radius);
 }
 main{
     background-color: black;
     grid-area: main;
+    padding: var(--main-padding);
+    border-radius: var(--main-border-radius);
 }
 #sidebar{
     background-color: #84ffff;
     grid-area: sidebar;
+        padding: var(--main-padding);
+    border-radius: var(--main-border-radius);
 }
 .content1 {
     background-color: violet;
     grid-area: content1;
+        padding: var(--main-padding);
+    border-radius: var(--main-border-radius);
 }
 .content2 {
     background-color: #84ff2f;
     grid-area: content2;
+        padding: var(--main-padding);
+    border-radius: var(--main-border-radius);
 }
 .content3 {
     background-color: #85aaff;
     grid-area: content3;
+        padding: var(--main-padding);
+    border-radius: var(--main-border-radius);
 }
 footer {
     background-color: red;
     grid-area: footer;
+        padding: var(--main-padding);
+    border-radius: var(--main-border-radius);
 }
 
 @media only screen and (max-width: 650px) {
  .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-rows:  0.1fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
     grid-template-areas:
      "nav"
      "sidebar"
@@ -61,6 +79,8 @@ footer {
      ;
  }
 }
+
+/*  */
  
 .container2 {
     display: grid;
